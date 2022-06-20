@@ -1,0 +1,36 @@
+h1 {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: 300px;
+    color: white;
+}
+
+h2, h3 {
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+ol, ul{
+    
+    list-style: none;
+    counter-reset: li;
+    color: darkgoldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    
+}
+ul li::before {content: "•"; color: brown;
+    display: inline-block; width: 1em;
+    margin-left: -1em
+}
+ol li::before {content: counter(li); 
+    counter-increment: li;
+    color: brown;
+    display: inline-block; width: 1em;
+    margin-left: -1em
+}
+img{
+    height: auto;
+    width: 300px;
+}
